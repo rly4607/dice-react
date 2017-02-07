@@ -12,26 +12,14 @@ var Die = React.createClass({
     var newInt = getRandomInt(1,6)
     var url = "http://golearntocode.com/images/dice/" + newInt + ".png";
 
+    console.log(newInt)
+
     return (
       <div className="col-sm-4">
-        <h1>The integer is  {newInt}</h1>
+
         <img src={url} />
 
       </div>
-
-    /*
-
-        <--  <img src={"http://golearntocode.com/images/dice/" + {this.int} + ".png"} /> -->
-        <div className="col-sm-2">
-        <div className="thumbnail">
-          <img className="img-responsive" role="presentation" src={this.props.poster} />
-          <div className="caption">
-            <h3>{this.props.name}</h3>
-            <p>{this.props.type}</p>
-            <p>{this.props.runtime}</p>
-          </div>
-        </div>
-      </div> */
     )
   }
 })
